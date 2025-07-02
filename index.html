@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/827c802496.js" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -67,42 +68,42 @@
     <!--PROJECTS-->
     <div class="projects relative p-6">
         <div class="firstProject mb-5">
-            <img src="./images/nuke.png" class="border-[2px] border-dotted border-[#e6e5dd] mb-5">
+            <a href="https://nuke-ecommerce.netlify.app/"><img src="./images/nuke.png" class="border-[2px] border-dotted border-[#e6e5dd] mb-5"></a>
             <div class="details">
                 <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Nuke</h2>
                 <p class="text-lg font-[portLight] capitalize">An ecommerce UI website for sneaker lovers</p>
-                <a href="#">View Project</a>
+                <a href="https://nuke-ecommerce.netlify.app/">View Project</a>
             </div>
         </div>
 
         <div class="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2 md:gap-10">
             <div class="secondProject">
-                <img src="./images/dietLibrary.png" class="border-[2px] border-dotted mb-5">
+                <a href="https://diet-library.vercel.app/"><img src="./images/dietLibrary.png" class="border-[2px] border-dotted mb-5"></a>
                 <div class="details">
                     <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Diet Library</h2>
                     <p class="text-lg font-[portLight] capitalize">An online library for DIET Dehradun</p>
-                    <a href="#">View Project</a>
+                    <a href="https://diet-library.vercel.app/">View Project</a>
                 </div>
             </div>
 
             <div class="thirdProject">
-                <img src="./images/neverland.png" class="border-[2px] border-dotted mb-5">
+                <a href="https://neverland-anime.eu.org/"><img src="./images/neverland.png" class="border-[2px] border-dotted mb-5"></a>
                 <div class="details">
                     <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Neverland</h2>
                     <p class="text-lg font-[portLight] capitalize">Website for anime lovers to stream their favourite
                         anime</p>
-                    <a href="#">View Project</a>
+                    <a href="https://neverland-anime.eu.org/">View Project</a>
                 </div>
             </div>
 
         </div>
 
         <div class="fourthProject">
-            <img src="./images/soniquo.png" class="border-[2px] border-dotted mb-5">
+            <a href="https://headphone-startup.vercel.app/"><img src="./images/soniquo.png" class="border-[2px] border-dotted mb-5"></a>
             <div class="details">
                 <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Soniquo</h2>
                 <p class="text-lg font-[portLight] capitalize">A headphone company UI for audiophiles</p>
-                <a href="#">View Project</a>
+                <a href="https://headphone-startup.vercel.app/">View Project</a>
             </div>
         </div>
 
@@ -112,7 +113,7 @@
     <div class="skills p-10 relative mt-15">
         <div class="top flex flex-col gap-10 sm:flex-row sm:gap-50 sm:items-center justify-between">
             <div class="left w-full">
-                <p class="tracking-[3px] mb-2 text-xs md:text-sm">(4) Skills</p>
+                <p class="tracking-[3px] mb-2 text-xs md:text-sm">(3) Skills</p>
 
                 <h1 class="font-[portBold] text-[2.5rem] md:text-6xl tracking-widest leading-tight uppercase">
                     things i have learned
@@ -244,23 +245,38 @@
     </div>
 
     <!--ABOUT ME-->
-    <div class="about mt-15 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 uppercase p-10 bg-[#e6e5dd] text-[#181619] gap-10">
+    <div
+        class="about mt-15 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 uppercase p-10 bg-[#e6e5dd] text-[#181619] gap-10">
         <div class="left">
             <p class="font-[portLight] tracking-[2px] mb-5">About Me</p>
             <h1 class="font-[portBold] tracking-[3px] text-6xl">at last</h1>
         </div>
         <div class="center">
-            <p  class="font-[portLight] tracking-[2px] mb-5">name</p>
+            <p class="font-[portLight] tracking-[2px] mb-5">name</p>
             <h1 class="font-[portBold] tracking-[3px] text-3xl">mayank negi</h1>
         </div>
         <div class="right">
-            <p  class="font-[portLight] tracking-[2px] mb-5">currently</p>
+            <p class="font-[portLight] tracking-[2px] mb-5">currently</p>
             <h1 class="font-[portBold] tracking-[3px] text-3xl">curretly studying in UPES as a btech cse student</h1>
         </div>
     </div>
+
+    <!--MUSIC PLAYER-->
+    <div class="music-player">
+
+        <!-- Player Controls -->
+        <div class="player-controls">
+            <button id="play-pause-btn" class="play-pause-btn">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+
+    </div>
+    <audio id="audio-source" loop></audio>
+
 </body>
 
-
+<script src="./music.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
     integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
