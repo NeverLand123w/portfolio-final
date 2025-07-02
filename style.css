@@ -1,10 +1,28 @@
 @font-face {
-    font-family: 'portBold';
-    src: url('fonts/portBold.otf') format('opentype');
+  font-family: 'portBold';
+  src: url('fonts/portBold.otf') format('opentype');
 }
+
 @font-face {
-    font-family: 'portLight';
-    src: url('fonts/portLight.otf') format('opentype');
+  font-family: 'portLight';
+  src: url('fonts/portLight.otf') format('opentype');
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.transform-rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.flipped .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
 ::selection {

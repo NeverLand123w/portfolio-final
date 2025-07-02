@@ -12,8 +12,10 @@
 
 
 
-<body class="font-[portLight]">
-    <div class="hero bg-[#181619] text-[#e6e5dd]  relative min-h-screen p-6 md:p-10 flex flex-col justify-between">
+<body class="bg-[#181619] text-[#e6e5dd] font-[portLight]">
+
+    <!--HERO-->
+    <div class="hero relative min-h-screen p-6 md:p-10 flex flex-col justify-between">
 
         <div class="top-container uppercase">
             <p class="tracking-[3px] mb-2 text-sm md:text-base">I'm Mayank, a</p>
@@ -62,11 +64,12 @@
 
     </div>
 
-    <div class="projects bg-[#e6e5dd] text-[#181619] relative p-6">
+    <!--PROJECTS-->
+    <div class="projects relative p-6">
         <div class="firstProject mb-5">
-            <img src="./images/nuke.png" class="border-[2px] border-dotted mb-5">
+            <img src="./images/nuke.png" class="border-[2px] border-dotted border-[#e6e5dd] mb-5">
             <div class="details">
-                <h2 class="text-2xl font-[portBold]">Nuke</h2>
+                <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Nuke</h2>
                 <p class="text-lg font-[portLight] capitalize">An ecommerce UI website for sneaker lovers</p>
                 <a href="#">View Project</a>
             </div>
@@ -76,7 +79,7 @@
             <div class="secondProject">
                 <img src="./images/dietLibrary.png" class="border-[2px] border-dotted mb-5">
                 <div class="details">
-                    <h2 class="text-2xl font-[portBold]">Diet Library</h2>
+                    <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Diet Library</h2>
                     <p class="text-lg font-[portLight] capitalize">An online library for DIET Dehradun</p>
                     <a href="#">View Project</a>
                 </div>
@@ -85,8 +88,9 @@
             <div class="thirdProject">
                 <img src="./images/neverland.png" class="border-[2px] border-dotted mb-5">
                 <div class="details">
-                    <h2 class="text-2xl font-[portBold]">Neverland</h2>
-                    <p class="text-lg font-[portLight] capitalize">Website for anime lovers to stream their favourite anime</p>
+                    <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Neverland</h2>
+                    <p class="text-lg font-[portLight] capitalize">Website for anime lovers to stream their favourite
+                        anime</p>
                     <a href="#">View Project</a>
                 </div>
             </div>
@@ -96,12 +100,163 @@
         <div class="fourthProject">
             <img src="./images/soniquo.png" class="border-[2px] border-dotted mb-5">
             <div class="details">
-                <h2 class="text-2xl font-[portBold]">Soniquo</h2>
+                <h2 class="text-2xl font-[portBold] tracking-[0.1em]">Soniquo</h2>
                 <p class="text-lg font-[portLight] capitalize">A headphone company UI for audiophiles</p>
                 <a href="#">View Project</a>
             </div>
         </div>
 
+    </div>
+
+    <!--SKILLS-->
+    <div class="skills p-10 relative mt-15">
+        <div class="top flex flex-col gap-10 sm:flex-row sm:gap-50 sm:items-center justify-between">
+            <div class="left w-full">
+                <p class="tracking-[3px] mb-2 text-xs md:text-sm">(4) Skills</p>
+
+                <h1 class="font-[portBold] text-[2.5rem] md:text-6xl tracking-widest leading-tight uppercase">
+                    things i have learned
+                </h1>
+            </div>
+
+            <div class="right w-full">
+                <p class="tracking-[3px] mb-2 text-xs md:text-sm">PROCESS</p>
+                <h3 class="font-[portLight] text-lg md:text-2xl tracking-[1.5px] leading-[1.6em] mt-4 uppercase">
+                    think, create, build and deliver
+                </h3>
+            </div>
+
+        </div>
+
+
+        <div class="cards-section grid grid-cols-1 mt-10 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <div class="flip-card-container relative min-h-[400px] w-full perspective-1000 cursor-pointer">
+                <div
+                    class="flip-card-inner relative w-full h-full transition-transform duration-700 transform-style-preserve-3d">
+                    <div
+                        class="card-front bg-[#e6e5dd] hover:bg-[#d0cebb] text-[#181619] p-5 absolute w-full h-full backface-hidden rounded-lg shadow-lg flex flex-col">
+                        <div>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">01 /</p>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">skills</p>
+                            <h1 class="font-[portBold] text-4xl sm:text-6xl">UI/UX DESIGN</h1>
+                        </div>
+                        <div class="bottom-content mt-auto">
+                            <p class="tracking-[2px] mb-5 pr-5">Crafting seamless experiences. From UI copy to
+                                high-fidelity prototypes. I focus on user-centered design principles to create intuitive
+                                and engaging interfaces.</p>
+                            <p class="uppercase tracking-[3px] text-right p-5 font-semibold">click to flip</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card-back text-[#181619] bg-[#e6e5dd] p-5 absolute w-full h-full backface-hidden rounded-lg shadow-lg transform-rotate-y-180 flex flex-col">
+                        <div>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">01 /</p>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">details</p>
+                            <h1 class="font-[portBold] text-6xl">TOOLS</h1>
+                        </div>
+                        <div class="bottom-content mt-auto">
+                            <ul class="tracking-[2px] mb-5 pr-5 list-disc pl-5">
+                                <li>Figma</li>
+                                <li>Adobe XD</li>
+                                <li>Sketch</li>
+                                <li>Prototyping</li>
+                            </ul>
+                            <p class="uppercase tracking-[3px] text-right p-5 font-semibold">hover out to return</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card-container relative min-h-[400px] w-full perspective-1000 cursor-pointer">
+                <div
+                    class="flip-card-inner relative w-full h-full transition-transform duration-700 transform-style-preserve-3d">
+                    <div
+                        class="card-front bg-[#e6e5dd] hover:bg-[#d0cebb] text-[#181619] p-5 absolute w-full h-full backface-hidden rounded-lg shadow-lg flex flex-col">
+                        <div>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">02 /</p>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">skills</p>
+                            <h1 class="font-[portBold] text-4xl sm:text-6xl">CODE/NO CODE</h1>
+                        </div>
+                        <div class="bottom-content mt-auto">
+                            <p class="tracking-[2px] mb-5 pr-5">Bringing designs to life with clean code and modern
+                                no-code platforms, focusing on performance, scalability, and maintainability.</p>
+                            <p class="uppercase tracking-[3px] text-right p-5 font-semibold">click to flip</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card-back text-[#181619] bg-[#e6e5dd] p-5 absolute w-full h-full backface-hidden rounded-lg shadow-lg transform-rotate-y-180 flex flex-col">
+                        <div>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">02 /</p>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">details</p>
+                            <h1 class="font-[portBold] text-6xl">STACK</h1>
+                        </div>
+                        <div class="bottom-content mt-auto">
+                            <ul class="tracking-[2px] mb-5 pr-5 list-disc pl-5">
+                                <li>HTML & CSS</li>
+                                <li>JavaScript (Vue.js)</li>
+                                <li>Tailwind CSS</li>
+                                <li>Webflow</li>
+                            </ul>
+                            <p class="uppercase tracking-[3px] text-right p-5 font-semibold">hover out to return</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card-container relative min-h-[400px] w-full perspective-1000 cursor-pointer">
+                <div
+                    class="flip-card-inner relative w-full h-full transition-transform duration-700 transform-style-preserve-3d">
+                    <div
+                        class="card-front bg-[#e6e5dd] hover:bg-[#d0cebb] text-[#181619] p-5 absolute w-full h-full backface-hidden rounded-lg shadow-lg flex flex-col">
+                        <div>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">03 /</p>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">skills</p>
+                            <h1 class="font-[portBold] text-4xl sm:text-6xl">BRANDING</h1>
+                        </div>
+                        <div class="bottom-content mt-auto">
+                            <p class="tracking-[2px] mb-5 pr-5">Developing memorable brand identities that resonate with
+                                audiences. From logo design to comprehensive brand guidelines and strategy.</p>
+                            <p class="uppercase tracking-[3px] text-right p-5 font-semibold">click to flip</p>
+                        </div>
+                    </div>
+                    <div
+                        class="card-back text-[#181619] bg-[#e6e5dd] p-5 absolute w-full h-full backface-hidden rounded-lg shadow-lg transform-rotate-y-180 flex flex-col">
+                        <div>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">03 /</p>
+                            <p class="font-[portLight] tracking-[3px] mb-2 text-xs md:text-sm uppercase">details</p>
+                            <h1 class="font-[portBold] text-5xl">PROCESS</h1>
+                        </div>
+                        <div class="bottom-content mt-auto">
+                            <ul class="tracking-[2px] mb-5 pr-5 list-disc pl-5">
+                                <li>Discovery & Research</li>
+                                <li>Strategy</li>
+                                <li>Visual Identity</li>
+                                <li>Guidelines & Rollout</li>
+                            </ul>
+                            <p class="uppercase tracking-[3px] text-right p-5 font-semibold">hover out to return</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT ME-->
+    <div class="about mt-15 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 uppercase p-10 bg-[#e6e5dd] text-[#181619] gap-10">
+        <div class="left">
+            <p class="font-[portLight] tracking-[2px] mb-5">About Me</p>
+            <h1 class="font-[portBold] tracking-[3px] text-6xl">at last</h1>
+        </div>
+        <div class="center">
+            <p  class="font-[portLight] tracking-[2px] mb-5">name</p>
+            <h1 class="font-[portBold] tracking-[3px] text-3xl">mayank negi</h1>
+        </div>
+        <div class="right">
+            <p  class="font-[portLight] tracking-[2px] mb-5">currently</p>
+            <h1 class="font-[portBold] tracking-[3px] text-3xl">curretly studying in UPES as a btech cse student</h1>
+        </div>
     </div>
 </body>
 
@@ -124,5 +279,20 @@
     })();
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const flipCards = document.querySelectorAll('.flip-card-container');
+
+        flipCards.forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.add('flipped');
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.classList.remove('flipped');
+            });
+        });
+    });
+</script>
 
 </html>
