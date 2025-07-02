@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'portBold';
+    src: url('fonts/portBold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'portLight';
+    src: url('fonts/portLight.otf') format('opentype');
+}
+
+::selection {
+  background: #e6e5dd;
+  color: #181619;
+}
+
+::-moz-selection {
+  background: #e6e5dd;
+  color: #181619;
+}
