@@ -15,7 +15,8 @@ This is my personal portfolio website built using HTML, Tailwind CSS, and JavaSc
     🔧 Built with semantic HTML and utility-first Tailwind classes
 
 ## 📸 Preview
-    
+    ![image](https://github.com/user-attachments/assets/b83be22e-496c-440e-99a9-025f92feef60)
+
 
 ## 🛠️ Tech Stack
     HTML5
