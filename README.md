@@ -9,7 +9,7 @@ https://mnportfolio-final.netlify.app/
 ![App Screenshot](https://mnportfolio-final.netlify.app/images/portfolio.png)
 
 
-## Video
+## Walkthrough Video
 
 [Watch the video](https://mnportfolio-final.netlify.app/portfolio%20(1)%20(1).mp4)
 
