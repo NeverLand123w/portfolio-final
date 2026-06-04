@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mayank Negi | Digital Portfolio</title>
+    <meta name="title" content="Mayank Negi | Digital Portfolio">
+    <meta name="description"
+        content="Portfolio of Mayank Negi, a Software Engineer based in India specializing in Full Stack Development, Cyber Security, and Digital Forensics. Explore selected works including Storytellers, NeverLand, and DIET Library.">
+    <meta name="keywords"
+        content="Mayank Negi, Software Engineer, Cyber Security, Digital Forensics, Full Stack Developer, MERN Stack, Next.js, React, GSAP, Tailwind CSS, Python, Node.js, Penetration Testing, Wireshark, Burp Suite, India Developer, Portfolio 2026">
+    <meta name="author" content="Mayank Negi">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mnportfolio-final.netlify.app/">
+    <meta property="og:title" content="Mayank Negi | Digital Portfolio">
+    <meta property="og:description"
+        content="Software Engineer & Cyber Security Specialist based in India. Check out my latest full-stack applications, creative engineering experiments, and digital forensics capabilities.">
+    <meta property="og:image" content="https://mnportfolio-final.netlify.app/assets/images/portfolio.webp">
+    <meta property="og:site_name" content="Mayank Negi Portfolio">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mnportfolio-final.netlify.app/">
+    <meta property="twitter:title" content="Mayank Negi | Digital Portfolio">
+    <meta property="twitter:description"
+        content="Software Engineer & Cyber Security Specialist based in India. Check out my latest full-stack applications, creative engineering experiments, and digital forensics capabilities.">
+    <meta property="twitter:image" content="https://mnportfolio-final.netlify.app/assets/images/portfolio.webp">
+
+    <link rel="canonical" href="https://mnportfolio-final.netlify.app/">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp">
+
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&f[]=satoshi@300,400,500&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&f[]=satoshi@300,400,500&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+        <a href="#home" class="nav-logo hover-target nav-anchor" id="nav-logo">MAYANK NEGI</a>
+        <div class="nav-links">
+            <a href="#expertise" class="hover-target nav-anchor">Expertise</a>
+            <a href="#work" class="hover-target nav-anchor">Work</a>
+            <a href="#contact" class="hover-target nav-anchor">Contact</a>
+        </div>
+        <button class="menu-toggle hover-target" id="menu-toggle" aria-label="Toggle navigation menu"
+            aria-expanded="false">
+            <span class="line line-1" id="line-1"></span>
+            <span class="line line-2" id="line-2"></span>
+        </button>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-overlay-links">
+            <a href="#expertise" class="mobile-nav-anchor hover-target"><span>Expertise</span></a>
+            <a href="#work" class="mobile-nav-anchor hover-target"><span>Work</span></a>
+            <a href="#contact" class="mobile-nav-anchor hover-target"><span>Contact</span></a>
+        </div>
+    </div>
+
+    <div class="grain"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <div class="loader" id="loader">
+        <div class="loader-num" id="loader-num">00</div>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-top">
+                <div class="hero-meta-grid">
+                    <div class="meta-box hero-anim">
+                        <span class="label">Location</span>
+                        <p>Based in India.</p>
+                    </div>
+                    <div class="meta-box hero-anim">
+                        <span class="label">Specialization</span>
+                        <p>Cyber Security &<br>Forensics</p>
+                    </div>
+                    <div class="meta-box hero-anim">
+                        <span class="label">Status</span>
+                        <p>Open for new roles.</p>
+                    </div>
+                </div>
+
+                <div class="badge-wrapper hero-anim">
+                    <svg class="rotating-badge" viewBox="0 0 100 100">
+                        <path id="circlePath" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0"
+                            fill="transparent" />
+                        <text>
+                            <textPath href="#circlePath" startOffset="0%">
+                                • MAYANK NEGI • PORTFOLIO 2026
+                            </textPath>
+                        </text>
+                    </svg>
+                    <a href="../assests/resume/MayankNegi_Resume.pdf" download="MayankNegi_Resume.pdf"
+                        class="resume-btn hover-target" aria-label="Download Resume (PDF)">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="divider-h" style="position: absolute; bottom: 4vw; left:0;" id="hero-divider"></div>
+
+            <h1 class="hover-target">
+                <span class="line-mask"><span class="title-word">SOFTWARE</span></span><br>
+                <span class="line-mask"><span class="title-word">ENGINEER—</span></span><br>
+                <span class="line-mask"><span class="title-word">& CYBER SECURITY</span></span>
+            </h1>
+        </section>
+
+        <section class="marquee">
+            <div class="marquee-track">
+                <span>Cyber Security</span> <span>•</span><span>Full Stack Developer</span> <span>•</span>
+                <span>Creative Engineering</span> <span>•</span><span>Systems Architecture</span> <span>•</span>
+                <span>Cyber Security</span> <span>•</span><span>Full Stack Developer</span> <span>•</span>
+                <span>Creative Engineering</span> <span>•</span><span>Systems Architecture</span> <span>•</span>
+            </div>
+        </section>
+
+        <section class="skills-container" id="expertise">
+            <div class="skills-pin-wrap">
+                <div class="skills-header-block">
+                    <h2 class="display-font fade-text-light" style="font-size: clamp(2rem, 4vw, 5rem);">CAPABILITIES &
+                        ENGINEERING.</h2>
+                </div>
+
+                <div class="skills-track" id="skills-track">
+                    <div class="expertise-panel hover-target">
+                        <div class="ep-top">
+                            <div class="ep-number" style="text-transform: uppercase;">01 // Front-End</div>
+                            <h3 class="ep-title">Web<br>Interfaces</h3>
+                        </div>
+                        <div class="ep-bottom">
+                            <p class="ep-desc">Building responsive and smooth web applications. I focus on turning clean
+                                designs into functional code and adding animations for a better user experience.</p>
+                            <div class="ep-tech">
+                                <span class="pill pill-light">React / Next.js</span>
+                                <span class="pill pill-light">GSAP & Canvas</span>
+                                <span class="pill pill-light">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-panel hover-target">
+                        <div class="ep-top">
+                            <div class="ep-number" style="text-transform: uppercase;">02 // Back-End & Tools</div>
+                            <h3 class="ep-title">Logic &<br>Deployment</h3>
+                        </div>
+                        <div class="ep-bottom">
+                            <p class="ep-desc">Writing server-side code and managing application deployments. I focus on
+                                writing clean, organized code and handling API integrations to connect the front and
+                                back end smoothly.</p>
+                            <div class="ep-tech">
+                                <span class="pill pill-light">Node.js Ecosystem</span>
+                                <span class="pill pill-light">Python & Java</span>
+                                <span class="pill pill-light">Git / Vercel / Cloudflare</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-panel hover-target">
+                        <div class="ep-top">
+                            <div class="ep-number" style="text-transform: uppercase;">03 // Security</div>
+                            <h3 class="ep-title">Cyber<br>Forensics</h3>
+                        </div>
+                        <div class="ep-bottom">
+                            <p class="ep-desc">Currently specializing in cybersecurity and digital forensics for my
+                                degree. I practice analyzing network traffic and finding vulnerabilities to understand
+                                how to build safer software.</p>
+                            <div class="ep-tech">
+                                <span class="pill pill-light">Nmap</span>
+                                <span class="pill pill-light">Wireshark</span>
+                                <span class="pill pill-light">Burp Suite</span>
+                                <span class="pill pill-light">Nessus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-container" id="work">
+            <div class="projects-pin" id="projects-pin">
+                <div style="overflow:hidden; padding-bottom: 4vh;">
+                    <h2 class="display-font section-title fade-text" style="font-size: clamp(2rem, 3vw, 4rem);">SELECTED
+                        WORKS.</h2>
+                </div>
+
+                <div class="accordion-list">
+                    <a href="https://storyteller-minor.vercel.app/" style="text-decoration: none; color: inherit;"
+                        target="_blank">
+                        <div class="acc-item hover-target">
+                            <div class="acc-header">
+                                <span class="label">01 //</span>
+                                <h2 class="project-title">STORYTELLERS</h2>
+                                <span class="label tech-label-placeholder">Cloud Storage Platform</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-img-wrapper">
+                                    <div class="proj-tech-stack">
+                                        <span class="pill pill-solid">MERN Stack</span>
+                                        <span class="pill pill-solid">MongoDB</span>
+                                        <span class="pill pill-solid">Express.js</span>
+                                        <span class="pill pill-solid">Next.js</span>
+                                        <span class="pill pill-solid">TailwindCSS</span>
+                                    </div>
+                                    <img src="../assests/images/storyteller.webp" alt="Storytellers">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://f1-f8dk.onrender.com/" style="text-decoration: none; color: inherit;"
+                        target="_blank">
+                        <div class="acc-item hover-target">
+                            <div class="acc-header">
+                                <span class="label">02 //</span>
+                                <h2 class="project-title">F1 Game</h2>
+                                <span class="label tech-label-placeholder">Prediction Game</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-img-wrapper">
+                                    <div class="proj-tech-stack">
+                                        <span class="pill pill-solid">HTML</span>
+                                        <span class="pill pill-solid">CSS</span>
+                                        <span class="pill pill-solid">JavaScript</span>
+                                        <span class="pill pill-solid">GSAP</span>
+                                    </div>
+                                    <img src="../assests/images/f1.webp" alt="F1 Game">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://neverland.int.eu.org/" style="text-decoration: none; color: inherit;"
+                        target="_blank">
+                        <div class="acc-item hover-target">
+                            <div class="acc-header">
+                                <span class="label">03 //</span>
+                                <h2 class="project-title">NeverLand</h2>
+                                <span class="label tech-label-placeholder">Movie Streaming</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-img-wrapper">
+                                    <div class="proj-tech-stack">
+                                        <span class="pill pill-solid">Next.js</span>
+                                        <span class="pill pill-solid">TailwindCSS</span>
+                                        <span class="pill pill-solid">IMDB API</span>
+                                    </div>
+                                    <img src="../assests/images/MovieSite.webp" alt="NeverLand">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://diet-library.vercel.app/" style="text-decoration: none; color: inherit;"
+                        target="_blank">
+                        <div class="acc-item hover-target">
+                            <div class="acc-header">
+                                <span class="label">04 //</span>
+                                <h2 class="project-title">DIET Library</h2>
+                                <span class="label tech-label-placeholder">Cloud Storage Platform</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-img-wrapper">
+                                    <div class="proj-tech-stack">
+                                        <span class="pill pill-solid">React.js</span>
+                                        <span class="pill pill-solid">Tailwind CSS</span>
+                                        <span class="pill pill-solid">Node.js</span>
+                                        <span class="pill pill-solid">SQLite</span>
+                                    </div>
+                                    <img src="../assests/images/dietLibrary.webp" alt="DIET Library">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://nuke-ecommerce.netlify.app/" style="text-decoration: none; color: inherit;"
+                        target="_blank">
+                        <div class="acc-item hover-target">
+                            <div class="acc-header">
+                                <span class="label">05 //</span>
+                                <h2 class="project-title">Nuke</h2>
+                                <span class="label tech-label-placeholder">E-Commerce Frontend</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-img-wrapper">
+                                    <div class="proj-tech-stack">
+                                        <span class="pill pill-solid">HTML</span>
+                                        <span class="pill pill-solid">Tailwind CSS</span>
+                                        <span class="pill pill-solid">JavaScript</span>
+                                        <span class="pill pill-solid">GSAP</span>
+                                    </div>
+                                    <img src="../assests/images/nuke.webp" alt="Nuke">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://headphone-startup.vercel.app/" style="text-decoration: none; color: inherit;"
+                        target="_blank">
+                        <div class="acc-item hover-target">
+                            <div class="acc-header">
+                                <span class="label">06 //</span>
+                                <h2 class="project-title">Soniquo</h2>
+                                <span class="label tech-label-placeholder">Startup Product Frontend</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-img-wrapper">
+                                    <div class="proj-tech-stack">
+                                        <span class="pill pill-solid">React.js</span>
+                                        <span class="pill pill-solid">Tailwind CSS</span>
+                                        <span class="pill pill-solid">GSAP</span>
+                                    </div>
+                                    <img src="../assests/images/soniquo.webp" alt="Soniquo">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <div class="footer-top">
+                <h2 class="display-font section-title fade-text">LET'S CONNECT</h2>
+                <div class="footer-links-wrap">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mayanknegi15011@gmail.com" target="_blank"
+                        class="footer-link hover-target">Email</a>
+                    <a href="https://www.linkedin.com/in/mayank-negi-637944328/" target="_blank"
+                        class="footer-link hover-target">LinkedIn</a>
+                    <a href="https://github.com/NeverLand123w" target="_blank"
+                        class="footer-link hover-target">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="label">© 2026 Mayank Negi. All rights reserved.</span>
+                <a href="#home" class="label hover-target nav-anchor" style="text-decoration: none;">BACK TO TOP ↗</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="../js/lenis.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="app.js" defer></script>
+
+</body>
+
+</html>
